@@ -42,10 +42,7 @@ header{
     color: var(--main-color);
     font-weight: 600;
     font-size: 2.4rem;
-    transition: .5s;
-}
-.logo:hover{
-    transform: scale(1.4);
+    cursor: default;
 }
 .navbar{
     display: flex;
@@ -82,18 +79,10 @@ section{
     width: 600px;
     height: auto;
     border-radius: 1.5rem;
-    transition: .5s;
-}
-.home-img img:hover{
-  transform: scale(1.1);
 }
 .home-text h1{
     color: var(--main-color);
     font-size: var(--big-font);
-    transition: .5s;
-}
-.home-text h1:hover{
-  transform:scale(1.2);
 }
 .home-text h2{
     font-size: var(--h2-font);
