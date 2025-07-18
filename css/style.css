@@ -90,24 +90,6 @@ section {
 }
 
 .home {
-<<<<<<< HEAD
-  position: relative;
-  text-align: center;
-  height: 100vh;
-  padding-top: 12rem;
-  overflow: hidden;
-}
-
-.home-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.9; /* opsional, biar teks lebih kelihatan */
-=======
     text-align: center;
     align-items: center;
     background-image: url("img/background.png");
@@ -116,7 +98,6 @@ section {
     background-repeat: no-repeat;
     height: 100vh;
     padding-top: 12rem;
->>>>>>> b76f8fdb0616a280057b862e958958215fd1838c
 }
 
 
