@@ -90,22 +90,25 @@ section {
 }
 
 .home {
-  position: relative;
-  text-align: center;
-  height: 100vh;
-  padding-top: 12rem;
-  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .home-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.9; /* opsional, biar teks lebih kelihatan */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9;
+    /* opsional, biar teks lebih kelihatan */
 }
 
 
@@ -504,12 +507,33 @@ header.scrolled {
 }
 
 @media(max-width:575px) {
+    .home-text span {
+        font-size: 1.5rem;
+    }
+
+    .home-text h2 {
+        font-size: 1rem;
+    }
+
+    .company-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+
     .col {
         width: 100%;
     }
 
-    .about .about-text .first-p, 
-    .about .about-text .second-p, 
+    .about .about-text .first-p,
+    .about .about-text .second-p,
     .about .about-text .third-p {
         margin-right: auto;
         margin-left: auto;
