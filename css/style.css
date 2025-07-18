@@ -68,6 +68,12 @@ header {
     font-weight: 500;
 }
 
+header.scrolled .navbar a {
+    color: #1f1f29;
+    transition: color 0.3s ease;
+}
+
+
 .navbar a:hover {
     color: var(--main-color);
     transition: .4s;
@@ -80,7 +86,7 @@ header {
 }
 
 section {
-    padding: 7rem 14%;
+    padding: 7rem 10%;
 }
 
 .home {
@@ -128,10 +134,17 @@ section {
 }
 
 .about .about-text h2 {
-    text-align: center;
-    font-size: var(--h2-font);
+    font-size: 1.5rem;
     color: #1f1f29;
     margin-bottom: 2.5rem;
+}
+
+.about .about-text h3 {
+    text-align: end;
+    font-size: 1.5rem;
+    color: #1f1f29;
+    margin-bottom: 2.5rem;
+    font-style: italic;
 }
 
 
@@ -253,8 +266,8 @@ section {
 }
 
 .cta {
-    background: #feeee7;
-    padding: 70px 0px;
+    background: #f9f9f9;
+    padding: 3rem;
     width: 80%;
     height: 40%;
     text-align: center;
@@ -273,14 +286,14 @@ section {
     padding: 2rem 3rem;
     border-radius: 10px;
     width: 90%;
-    max-width: 700px;
+    max-width: 1000px;
     margin: auto;
     font-family: Arial, sans-serif;
 }
 
 .company-info h2 {
     text-align: center;
-    color: #01253F;
+    color: #1f1f29;
     margin-bottom: 15px;
 }
 
@@ -299,18 +312,15 @@ section {
     display: inline-block;
 }
 
-.about-text h2 {
-    font-size: var(--h2-font);
-    color: var(--main-color);
-    margin-bottom: 1rem;
-}
-
 .about-text p {
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 1.2rem;
     text-align: justify;
     color: var(--text-color);
+    border: #1f1f29 1.5px solid;
+    border-radius: 10px;
+    padding: .5rem 1rem;
 }
 
 .first-p,
@@ -386,7 +396,7 @@ section {
 }
 
 header.scrolled {
-    background-color: rgba(43, 38, 64, 0.95);
+    background-color: #f9f9f9;
     backdrop-filter: blur(5px);
     transition: background-color 0.3s ease;
 }
@@ -409,7 +419,7 @@ header.scrolled {
 .col .social a:hover {
     transform: scale(1.2);
     color: var(--bg-color);
-    background: var(--text-color);
+    background: #1f1f29;
 }
 
 @media(max-width:1560px) {
@@ -487,6 +497,15 @@ header.scrolled {
 
 @media(max-width:575px) {
     .col {
+        width: 100%;
+    }
+
+    .about .about-text .first-p, 
+    .about .about-text .second-p, 
+    .about .about-text .third-p {
+        margin-right: auto;
+        margin-left: auto;
+        direction: ltr;
         width: 100%;
     }
 }
