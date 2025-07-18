@@ -6,3 +6,5 @@
             header.classList.remove('scrolled');
         }
     });
+
+     AOS.init();
